@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import pareto1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-pareto-type1/tags). For example,
+
+```javascript
 import pareto1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@v0.1.1-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@esm/index.mjs';
 ```
 
 #### pareto1( shape, alpha, beta\[, options] )
@@ -348,7 +353,7 @@ var sz = random.byteLength;
 
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import pareto1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@v0.1.1-esm/index.mjs';
+import pareto1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-pareto-type1@esm/index.mjs';
 
 // Create a function for generating random arrays originating from the same state:
 var random = pareto1.factory({
